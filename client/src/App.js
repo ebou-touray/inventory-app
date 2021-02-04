@@ -1,8 +1,11 @@
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-   <h1>Helcome To The Inventory Management App</h1>
+    <div className="App">
+      <h1> Welcome To The Inventory Management App</h1>
+    </div>
   );
 }
 
