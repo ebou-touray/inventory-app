@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ebou-touray/inventory-mgt-app#readme",
   "dependencies": {
+    "antd": "^4.12.2",
     "express": "^4.17.1"
   }
 }
