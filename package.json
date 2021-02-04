@@ -1,0 +1,22 @@
+{
+  "name": "inventory-mgt-app",
+  "version": "1.0.0",
+  "description": "Internship Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebou-touray/inventory-mgt-app.git"
+  },
+  "author": "Ebou Touray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebou-touray/inventory-mgt-app/issues"
+  },
+  "homepage": "https://github.com/ebou-touray/inventory-mgt-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
