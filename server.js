@@ -22,10 +22,6 @@ require('./auth/config')(passport);
 // API routes
 app.use('/api/users', controllers.userController);
 app.use('/api/usergroups', controllers.userGroupController);
-app.use('/api/categories', controllers.categoryController);
-app.use('/api/subcategories', controllers.subcategoryController);
-app.use('/api/topics', controllers.topicController);
-app.use('/api/posts', controllers.postController);
 app.use('/api/stats', controllers.statsController);
 
 // If no API routes are hit, send the build version of the React client

@@ -6,13 +6,9 @@ import Footer from './components/Footer/Footer';
 import reducer from './utils/reducer';
 
 // Pages
-import Board from './pages/Board/Board';
-import Subcategory from './pages/Subcategory/Subcategory';
-import Topic from './pages/Topic/Topic';
+
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
-import Activity from './pages/Activity/Activity';
-import NewTopic from './pages/NewTopic/NewTopic';
 import Page404 from './pages/Page404/Page404';
 
 // Auth context
@@ -49,13 +45,9 @@ const App = () => {
             <Header />
 
             <Switch>
-              <Route path="/" exact component={Board} />
-              <Route path="/subcategory" component={Subcategory} />
-              <Route path="/topic" component={Topic} />
+              
               <Route path="/login" component={Login} />
               <Route path="/register" component={Register} />
-              <Route path="/activity" component={Activity} />
-              <Route path="/newtopic" component={NewTopic} />
               <Route path="*" exact component={Page404} />
             </Switch>
 
