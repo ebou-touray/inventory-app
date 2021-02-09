@@ -5,6 +5,8 @@ import {
   LogoutOutlined,
   UserOutlined,
   UserAddOutlined,
+  HomeOutlined,
+  TableOutlined,
 } from '@ant-design/icons';
 import styles from './Header.module.css';
 import { AuthContext } from '../../App';
@@ -17,7 +19,7 @@ const Header = () => {
   const { dispatch, state } = useContext(AuthContext);
   const history = useHistory();
   const location = useLocation();
-  
+  let homekey = '/';
 
   const logout = () => {
     Modal.confirm({
@@ -53,7 +55,15 @@ const Header = () => {
             selectedKeys={[location.pathname]}
             className={styles.HeaderMenu}
           >
-           
+            <Menu.Item key={homekey} icon={<HomeOutlined />}>
+              <NavLink to="/">Home</NavLink>
+            </Menu.Item>
+            {state.isAuthenticated && (
+              <Menu.Item key="/item" icon={<TableOutlined />}>
+                <NavLink to="/item">Items</NavLink>
+              </Menu.Item>
+            )}
+
             {state.isAuthenticated && (
               <Menu.Item icon={<LogoutOutlined />} onClick={logout}>
                 Logout

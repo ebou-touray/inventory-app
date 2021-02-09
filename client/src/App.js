@@ -1,15 +1,17 @@
 import React, { createContext, useReducer, useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Layout } from 'antd';
+
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import reducer from './utils/reducer';
 
 // Pages
-
+import Home from './pages/Home/Home'
+import Item from './pages/Item/Item'
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
-import Page404 from './pages/Page404/Page404';
+
 
 // Auth context
 export const AuthContext = createContext();
@@ -45,10 +47,10 @@ const App = () => {
             <Header />
 
             <Switch>
-              
+              <Route path="/" exact component={Home} />
+              <Route path="/item" component={Item} />
               <Route path="/login" component={Login} />
               <Route path="/register" component={Register} />
-              <Route path="*" exact component={Page404} />
             </Switch>
 
             <Footer />

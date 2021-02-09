@@ -28,21 +28,21 @@ const Footer = () => {
               {state.isAuthenticated ? (
                 <>
                   <Link href="/login">
-                    <LoginOutlined /> Sign In
+                    <LoginOutlined /> Login
                   </Link>
                   <br />
                   <Link href="/register">
-                    <UserAddOutlined /> Create an account
+                    <UserAddOutlined /> Register
                   </Link>
                 </>
               ) : (
                 <>
                   <Link href="/login">
-                    <LoginOutlined /> Sign in
+                    <LoginOutlined /> Login
                   </Link>
                   <br />
                   <Link href="/register">
-                    <UserAddOutlined /> Create an account
+                    <UserAddOutlined /> Register
                   </Link>
                   <br />
                 </>
