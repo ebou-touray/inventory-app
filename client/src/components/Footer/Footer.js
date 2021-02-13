@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styles from './Footer.module.css';
-import { Typography, Row, Col } from 'antd';
+import { Typography, Row, Col, BackTop } from 'antd';
 import {
   LoginOutlined,
   UserAddOutlined,
@@ -56,6 +56,11 @@ const Footer = () => {
           </Row>
         </Col>
       </Row>
+      <>
+        <BackTop />
+
+      
+      </>
     </footer>
   );
 };

@@ -1,9 +1,9 @@
 const userController = require('./user.controller');
 const userGroupController = require('./userGroup.controller');
-const statsController = require('./stats.controller');
+const itemController = require('./item.controller');
 
 module.exports = {
   userController,
   userGroupController,
-  statsController,
+  itemController,
 };
