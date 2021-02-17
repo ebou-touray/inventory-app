@@ -9,11 +9,7 @@ const { Title } = Typography;
 const Home = () => {
   return (
     <div className={styles.Home}>
-   
-      <Carousel autoplay>
-          <img className="inventory1" src={Inventory1} />
           <img className="inventory2" src={Inventory2} />
-      </Carousel>
     </div>
   );
 };

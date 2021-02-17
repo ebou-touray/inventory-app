@@ -22,7 +22,7 @@ require('./auth/config')(passport);
 // API routes
 app.use('/api/users', controllers.userController);
 app.use('/api/usergroups', controllers.userGroupController);
-app.use('/api/items', controllers.itemController);
+
 
 // If no API routes are hit, send the build version of the React client
 app.use(express.static(path.join(__dirname, './client/build')));
